@@ -1,12 +1,14 @@
-from django.urls import include, path
-from rest_framework import routers
+# from django.urls import include, path
+# from rest_framework import routers
 
-from bootcamp_rest_framework.servicios_dian.views import vistasDian
+# from servicios_dian.views import vistasDian
 
-router = routers.SimpleRouter()
+# router = routers.SimpleRouter()
+# router.register(r'vistasDian', vistasDian)
 
-router.register(r'vistasDian', vistasDian)
+from django.urls import path
+from .views import ExternalServiceView
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('external-data/', ExternalServiceView.as_view(), name='external-data'),
 ]

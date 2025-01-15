@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-import servicios_dian 
+# import servicios_dian.urls 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/servicios_Dian', include(servicios_dian.urls))
+    path('servicios_Dian/', include('servicios_dian.urls'))
 ]
