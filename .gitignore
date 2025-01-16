@@ -49,3 +49,8 @@ logs/
 *.7z
 
 
+#keys
+*.crt
+*.key
+*.pfx
+
