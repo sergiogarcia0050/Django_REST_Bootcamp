@@ -51,6 +51,6 @@ logs/
 
 #keys
 *.crt
-*.key
+*.keys
 *.pfx
-
+*.key
