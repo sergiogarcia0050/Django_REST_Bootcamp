@@ -1,4 +1,5 @@
 expresión regular que borra los pyc y migraciones:
+hola
 
 Get-ChildItem -Recurse -File |
      Where-Object {
